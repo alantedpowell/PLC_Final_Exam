@@ -1,0 +1,7 @@
+In math:
+
+If A = 5, B = 4, C = 3... This is true. Because A, is indeed greater than B, which is indeed greater than C.
+
+In C:
+
+If A = 5, B, 4, C = 3... This will return False (of course given we've set the c program to "evaluate" booleans as Bool is not a given data type in C), after comparing A and B, it will return either 1 or 0. Neither of these values is greater than C (which is 3) thus, will return False

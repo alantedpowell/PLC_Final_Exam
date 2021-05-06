@@ -1,0 +1,11 @@
+expr --> equality ;
+equ --> comparison ( ( "!=" | "==" ) comparison )* ;
+comp --> term ( ( ">" | ">=" | "<" | "<=" ) term )* ;
+not --> lessT_greatT ( "&&" | "\" | "!" )
+lessT_greatT --> ( "<" | ">" ); 
+term --> factor ( ( "-" | "+" ) factor )* ;
+fact --> unary ( ( "/" | "*" ) unary )* ;
+postF --> preF ( "++" | "--" );
+preF --> una ( "++" | "--" );
+una --> ( "!" | "-" ) unary | primary ;
+prim --> NUMBER | STRING | "true" | "false" | "nil" | "(" expression ")" ;
